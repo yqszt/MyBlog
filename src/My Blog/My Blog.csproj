@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-My_Blog-02CD2490-0953-4AF1-8504-21EA3B78A502</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Ueditor\Config.cs" />
+    <Content Include="Ueditor\ConfigHandler.cs" />
+    <Content Include="Ueditor\CrawlerHandler.cs" />
+    <Content Include="Ueditor\Handler.cs" />
+    <Content Include="Ueditor\ListFileHandler.cs" />
+    <Content Include="Ueditor\NotSupportedHandler.cs" />
+    <Content Include="Ueditor\PathFormater.cs" />
+    <Content Include="Ueditor\UploadHandler.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="2.6.375" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" PrivateAssets="All" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogBusinessLogic\BlogBusinessLogic.csproj" />
+    <ProjectReference Include="..\BlogModel\BlogModel.csproj" />
+    <ProjectReference Include="..\BlogRepository.MySQL\BlogRepository.MySQL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\lib\ueditor\net\App_Code\" />
+  </ItemGroup>
+
+</Project>
