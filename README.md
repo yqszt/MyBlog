@@ -1,2 +1,2 @@
 Hi, This is a demo updated follw my blog.
-Blog: https://www.cnblogs.com/selimsong
+For more details reference my blog: https://www.cnblogs.com/selimsong
